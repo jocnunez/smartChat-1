@@ -4,22 +4,22 @@ var histories = [{
 		messages: [
 			{
 				type: "customer",
-				text: "Hola, voy a ir de viaje a alemania",
+				text: "Hello, I'm going on a trip to Germany",
 				minutes: 0
 			},
 			{
 				type: "customer",
-				text: "Que comisiones y tipo de cambio se apliclan al sacar dinero y pagar con tarjeta",
+				text: "What fees are applied when withdrawing money and paying by card",
 				minutes: 1
 			},
 			{
 				type: "agent",
-				text: "Le paso una tabla con los datos",
+				text: "Here it is a table with all the data",
 				minutes: 42
 			},
 			{
 				type: "agent",
-				text: " ",
+				text: "<img style=\"width: 215px;\" src=\"comisions.png\">",
 				minutes: 43
 			}
 		]
@@ -30,32 +30,32 @@ var histories = [{
 		messages: [
 			{
 				type: "agent",
-				text: "Hola, pensamos que puede interesarte un seguro de viajes, adjuntamos información al respecto",
+				text: "Hello, we think you may be interested in travel insurance",
 				minutes: 0
 			},
 			{
 				type: "agent",
-				text: "https://www.ing.es/travel-insurance",
+				text: "Here it is all info about travel insurances: https://www.ing.es/travel-insurance",
 				minutes: 0
 			},
 			{
 				type: "customer",
-				text: "Se puede contratar para solo 5 dias?",
+				text: "Can it be contracted for only 5 days?",
 				minutes: 12
 			},
 			{
 				type: "agent",
-				text: "Sin problema",
+				text: "Sure!",
 				minutes: 50
 			},
 			{
 				type: "customer",
-				text: "Se acuerdo, quiero contratarlo",
+				text: "Ok, I want to contract it",
 				minutes: 55
 			},
 			{
-				type: "customer",
-				text: " ",
+				type: "validate",
+				text: "<img src=\"validate.jpeg\">",
 				minutes: 55
 			}
 		]
@@ -66,28 +66,33 @@ var histories = [{
 		messages: [
 			{
 				type: "customer",
-				text: "Estoy apunto de coger un avion a Munich",
+				text: "I'm about to fly to Munich",
 				minutes: 0
 			},
 			{
 				type: "customer",
-				text: "me pueden decir en que cajeros puedo y no puedo sacar dinero?",
+				text: "Can you tell me in which ATMs I can withdraw money?",
 				minutes: 0
 			},
 			{
 				type: "agent",
-				text: "No hay problema, en cualquier cajero tienes la misma comision que te comentamos",
+				text: "No problem, while you are abroad, all the ATMs have the same fee",
 				minutes: 80
 			},
 			{
 				type: "agent",
-				text: "Te dejamos un mapa de cajeros en aeropuerto para cuando aterrices",
+				text: "Let me send you a map of ATMs at the Munich airport",
 				minutes: 80
 			},
 			{
 				type: "agent",
-				text: "Buen viaje!",
-				minutes: 81
+				text: "<img style=\"width: 215px;\" src=\"munich.png\">",
+				minutes: 82
+			},
+			{
+				type: "agent",
+				text: "Good trip!",
+				minutes: 82
 			}
 		]
 	},
@@ -97,27 +102,27 @@ var histories = [{
 		messages: [
 			{
 				type: "customer",
-				text: "Acaba de llegarme dos mensajes de la misma compra",
+				text: "I have just received two push messages for the same purchase",
 				minutes: 0
 			},
 			{
 				type: "customer",
-				text: "Podeis corregirlo?",
+				text: "Can you fix it?",
 				minutes: 3
 			},
 			{
 				type: "agent",
-				text: "Hola, no se preocupe que lo solucionamos",
+				text: "Hi, don't worry we will fix it as soon as possible",
 				minutes: 90
 			},
 			{
 				type: "agent",
-				text: "Ya tiene la devolución en su cuenta",
+				text: "You already have a refund in your account",
 				minutes: 1024
 			},
 			{
 				type: "agent",
-				text: "Disculpe las molestias",
+				text: "sorry for the inconvenience",
 				minutes: 1024
 			}
 		]
@@ -128,32 +133,32 @@ var histories = [{
 		messages: [
 			{
 				type: "customer",
-				text: "Segun me dijisteis por sacar a debito me tendriais que cobrar 2€",
+				text: "You told me that ATM withdrawls has a fee of 2€",
 				minutes: 0
 			},
 			{
 				type: "customer",
-				text: "Ayer saque 150€, pero veo comision de 4,5€",
+				text: "But yesterday I withdraw 150€ and you charge me a fee of 4.5€",
 				minutes: 1
 			},
 			{
 				type: "agent",
-				text: "Hemos revisado su retirada",
+				text: "We have reviewed your withdrawal",
 				minutes: 200
 			},
 			{
 				type: "agent",
-				text: "El problema es que el banco donde saco nos lo ha pasado como credito y no como debito",
+				text: "The problem is that the ATM where you withdraw has marked it as credit",
 				minutes: 200
 			},
 			{
 				type: "agent",
-				text: "Acabamos de ingresarle 2,5€",
+				text: "We have just deposit 2.5€ in your account",
 				minutes: 201
 			},
 			{
 				type: "agent",
-				text: "Disculpe las molestias",
+				text: "Sorry for the inconvenience",
 				minutes: 201
 			}
 		]

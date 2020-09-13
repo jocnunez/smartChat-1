@@ -406,7 +406,33 @@ body {
 
 /* Small Screens */
 
+.page.photo{
+    background: url("background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+  }
+
+.marvel-device.photo {
+    width: 290px;
+    height: 520px;
+    top: -58px;
+    left: -1px;
+}
+
+.message.validate img{
+  width: 286px;
+  left: -23px;
+  position: relative;
+}
+
+.message.validate span, .message.validate:after{
+  display: none;
+}
+
 @media (max-width: 768px) {
+
   .marvel-device.nexus5 {
     border-radius: 0;
     flex: none;
