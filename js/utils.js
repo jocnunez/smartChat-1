@@ -1,10 +1,16 @@
-function recalculateData (chatAgentsPercent, SECONDS_PER_CALL, CALLS, AGENTS, SMART_AGENTS) {
+function recalculateData (chatAgentsPercent, SECONDS_PER_CALL, SECONDS_PER_CHAT, CALLS) { //AGENTS, SMART_AGENTS) {
 	var SECONDS_PER_HALF_HOUR = 60 * 30;
 	var CALLS_IN_HALF_HOUR_BY_AGENT = SECONDS_PER_HALF_HOUR / SECONDS_PER_CALL;
 
 	var CURRENT_CALLS = CALLS.map(calls => Math.ceil(calls / CALLS_IN_HALF_HOUR_BY_AGENT));
-	//var AGENTS = [20, 100, 200, 250, 300, 350, 400, 450, 450, 500, 500, 500, 450, 400, 350, 275, 275, 275, 275, 275, 275, 275, 275, 275, 275, 250, 200, 200, 150, 100, 50, 50, 50, 20]
-	//var SMART_AGENTS = [20, 100, 200, 250, 300, 350, 350, 350, 350, 350, 350, 350, 350, 350, 350, 275, 275, 275, 275, 275, 275, 275, 275, 275, 275, 250, 200, 200, 150, 100, 50, 50, 50, 20]
+
+	var AGENTS = CURRENT_CALLS.map( (calls, i) => {
+
+		var prev = CURRENT_CALLS[i-1] || CURRENT_CALLS[0];
+		var next = CURRENT_CALLS[i+1] || CURRENT_CALLS[CURRENT_CALLS.length-1];
+		var estimated = calls < next ? (calls + next)/2 : (calls + prev)/2;
+		return estimated * 1.05;
+	})
 
 	var CALL_AGENTS = [];
 	var CHAT_AGENTS = [];
@@ -13,9 +19,22 @@ function recalculateData (chatAgentsPercent, SECONDS_PER_CALL, CALLS, AGENTS, SM
 	CURRENT_CALLS.forEach(current => {
 		var calls = Math.ceil(current * (100 - chatAgentsPercent) / 100);
 		var chats = Math.ceil(current * (chatAgentsPercent) / 100);
-		CALL_AGENTS.push(calls);
-		CHAT_AGENTS.push(chats);
+		CALL_AGENTS.push(calls);//*SECONDS_PER_CALL/450);
+		CHAT_AGENTS.push(chats);//*SECONDS_PER_CHAT/450);
 	});
+
+	var SMART_AGENTS = CALL_AGENTS.map( (calls, i) => {
+
+		var prev = i > 0 ? CALL_AGENTS[i-1] + CHAT_AGENTS[i-1] : CALL_AGENTS[0] + CHAT_AGENTS[0];
+		var next = i < CALL_AGENTS.length-1 ? CALL_AGENTS[i+1] + CHAT_AGENTS[i+1] : CALL_AGENTS[CALL_AGENTS.length-1] + CHAT_AGENTS[CHAT_AGENTS.length-1];
+		var estimated = calls < next ? (calls + next)/2 : (calls + prev)/2;
+		return estimated * 1.0;
+
+		// var prev = CALL_AGENTS[i-1] || CALL_AGENTS[0];
+		// var next = CALL_AGENTS[i+1] || CALL_AGENTS[CALL_AGENTS.length-1];
+		// var estimated = calls < next ? (calls + next)/2 : (calls + prev)/2;
+		// return estimated * 1.05;
+	})
 
 	var chatsPending = 0;
 	CHAT_AGENTS = CHAT_AGENTS.map((chats, i) => {
@@ -26,9 +45,6 @@ function recalculateData (chatAgentsPercent, SECONDS_PER_CALL, CALLS, AGENTS, SM
 		DELAYED_CHAT_AGENTS.push(chatsAnseredDelayed);
 		return chatsAnsered;
 	});
-
-
-
 
 	var DATA = {
 		current: {
@@ -109,5 +125,10 @@ function recalculateData (chatAgentsPercent, SECONDS_PER_CALL, CALLS, AGENTS, SM
 			borderColor: COLORS.blue,
 			backgroundColor: COLORS.white,
 			data: AGENTS,
-		}]
+		}];
+
+		return {
+			totalAgents: AGENTS.reduce((sum, elem) => sum + elem, 0),
+            totalSmartAgents: SMART_AGENTS.reduce((sum, elem) => sum + elem, 0)
+		}
 }

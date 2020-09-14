@@ -2,17 +2,18 @@ var graphic;
 
 function updateData(callsOnly) {
     var chatAgentsPercent = Number(document.getElementById('chat-agents-percent').value);
-    var secondsPerCall = Number(document.getElementById('secconds-per-call').value);
+    var secondsPerCall = Number(document.getElementById('calls-secconds').value);
+    var secondsPerChat = Number(document.getElementById('chats-secconds').value);
     var dataTableCalls = document.querySelectorAll('#data-table tr')[1].querySelectorAll('td');
-    var dataTableAgents = document.querySelectorAll('#data-table tr')[2].querySelectorAll('td');
-    var dataTableSmartAgents = document.querySelectorAll('#data-table tr')[3].querySelectorAll('td');
+    //var dataTableAgents = document.querySelectorAll('#data-table tr')[2].querySelectorAll('td');
+    //var dataTableSmartAgents = document.querySelectorAll('#data-table tr')[3].querySelectorAll('td');
     var calls = [];
-    var agents = [];
-    var smartAgents = [];
+    // var agents = [];
+    // var smartAgents = [];
     dataTableCalls.forEach(td => calls.push(Number(td.textContent)));
-    dataTableAgents.forEach(td => agents.push(Number(td.textContent)));
-    dataTableSmartAgents.forEach(td => smartAgents.push(Number(td.textContent)));
-    recalculateData(chatAgentsPercent, secondsPerCall, calls, agents, smartAgents);
+    //dataTableAgents.forEach(td => agents.push(Number(td.textContent)));
+    //dataTableSmartAgents.forEach(td => smartAgents.push(Number(td.textContent)));
+    var agents = recalculateData(chatAgentsPercent, secondsPerCall, secondsPerChat, calls); // agents, smartAgents);
     var nextData = callsOnly ? initData : dataRoll[0];
     config.data.datasets.forEach(function (dataset, pos) {
         dataset.label = nextData[pos].label;
@@ -24,10 +25,7 @@ function updateData(callsOnly) {
         });
     });
 
-    var totalAgents = agents.reduce((sum, elem) => sum + elem, 0);
-    var totalSmartAgents = smartAgents.reduce((sum, elem) => sum + elem, 0);
-
-    saving.querySelector('span').textContent = 100 - Math.round(totalSmartAgents/totalAgents * 100) + '%';
+    saving.querySelector('span').textContent = 100 - Math.round(agents.totalSmartAgents/agents.totalAgents * 100) + '%';
 
     usage.querySelector('span').textContent = chatAgentsPercent + '%';
 }
@@ -51,9 +49,9 @@ window.onload = function () {
 
     function updateSmartData(percent, smartAgents) {
         document.getElementById('chat-agents-percent').value = percent;
-        smartAgents.forEach((agents, i) => {
-            document.querySelectorAll('#data-table tr')[3].querySelectorAll('td')[i].textContent = agents;
-        });
+        // smartAgents.forEach((agents, i) => {
+        //     document.querySelectorAll('#data-table tr')[3].querySelectorAll('td')[i].textContent = agents;
+        // });
 
         dataRoll.push(dataRoll.shift());
         updateData(false);
@@ -66,22 +64,25 @@ window.onload = function () {
 
     document.getElementById('chatButton10').addEventListener('click', function () {
         var percent = 10;
-        var smartAgents = [20, 100, 150, 225, 275, 325, 375, 400, 425, 425, 425, 425, 400, 350, 300, 275, 275, 275, 275, 275, 275, 275, 275, 275, 275, 250, 200, 200, 150, 150, 100, 75, 50, 50];
-        updateSmartData(percent, smartAgents);
+        document.getElementById('chat-agents-percent').value = percent;
+        // var smartAgents = [20, 100, 150, 225, 275, 325, 375, 400, 425, 425, 425, 425, 400, 350, 300, 275, 275, 275, 275, 275, 275, 275, 275, 275, 275, 250, 200, 200, 150, 150, 100, 75, 50, 50];
+        updateSmartData(percent);//, smartAgents);
     });
 
     document.getElementById('chatButton20').addEventListener('click', function () {
         var percent = 20;
-        var smartAgents = [20, 100, 150, 225, 250, 300, 350, 375, 375, 375, 375, 375, 350, 350, 300, 250, 250, 250, 250, 250, 250, 250, 250, 250, 250, 200, 200, 150, 150, 100, 100, 75, 50, 50];
-        updateSmartData(percent, smartAgents);
+        document.getElementById('chat-agents-percent').value = percent;
+        // var smartAgents = [20, 100, 150, 225, 250, 300, 350, 375, 375, 375, 375, 375, 350, 350, 300, 250, 250, 250, 250, 250, 250, 250, 250, 250, 250, 200, 200, 150, 150, 100, 100, 75, 50, 50];
+        updateSmartData(percent);//, smartAgents);
     });
 
 
 
     document.getElementById('chatButton30').addEventListener('click', function () {
         var percent = 30;
-        var smartAgents = [20, 75, 100, 150, 200, 250, 300, 350, 350, 350, 350, 350, 350, 300, 275, 250, 250, 250, 250, 250, 250, 250, 250, 250, 250, 200, 200, 150, 150, 100, 100, 75, 50, 50];
-        updateSmartData(percent, smartAgents);
+        document.getElementById('chat-agents-percent').value = percent;
+        // var smartAgents = [20, 75, 100, 150, 200, 250, 300, 350, 350, 350, 350, 350, 350, 300, 275, 250, 250, 250, 250, 250, 250, 250, 250, 250, 250, 200, 200, 150, 150, 100, 100, 75, 50, 50];
+        updateSmartData(percent);//, smartAgents);
     });
 
     document.getElementById('chatButton').addEventListener('click', function () {
