@@ -208,6 +208,7 @@ body {
   width: 0;
   height: 0;
   border-style: solid;
+  display: none;
 }
 
 .metadata {
@@ -428,6 +429,22 @@ body {
 }
 
 .message.validate span, .message.validate:after{
+  display: none;
+}
+
+.message.date {
+  background: #f39a6f;
+    border-radius: 10px;
+    width: 40px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 10px;
+    font-weight: bold;
+    margin: auto;
+    color: white;
+}
+
+.message.date span, .message.date:after{
   display: none;
 }
 

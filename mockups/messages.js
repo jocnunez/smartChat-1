@@ -9,18 +9,28 @@ var histories = [{
 			},
 			{
 				type: "customer",
-				text: "What fees are applied when withdrawing money and paying by card",
+				text: "What fees are applied when withdrawing money and paying by card?",
 				minutes: 1
 			},
 			{
 				type: "agent",
-				text: "Here it is a table with all the data",
+				text: "Hello John, it's Paul. Here it is a table with the info you asked for",
 				minutes: 42
 			},
 			{
 				type: "agent",
 				text: "<img style=\"width: 215px;\" src=\"comisions.png\">",
 				minutes: 43
+			},
+			{
+				type: "agent",
+				text: "Tell us if you need anything else",
+				minutes: 42
+			},
+			{
+				type: "customer",
+				text: "Thanks",
+				minutes: 83
 			}
 		]
 	},
@@ -30,7 +40,7 @@ var histories = [{
 		messages: [
 			{
 				type: "agent",
-				text: "Hello, we think you may be interested in travel insurance",
+				text: "Hello, we think you may be interested in a travel insurance",
 				minutes: 0
 			},
 			{
@@ -40,18 +50,23 @@ var histories = [{
 			},
 			{
 				type: "customer",
-				text: "Can it be contracted for only 5 days?",
+				text: "Can it be contracted only for 5 days?",
 				minutes: 12
 			},
 			{
 				type: "agent",
-				text: "Sure!",
+				text: "Sure! Only tell us your travel dates",
 				minutes: 50
 			},
 			{
 				type: "customer",
-				text: "Ok, I want to contract it",
+				text: "Ok, I want to contract it from 25/9 to 30/9",
 				minutes: 55
+			},
+			{
+				type: "agent",
+				text: "Ok, please validate with your Mobile Password:",
+				minutes: 50
 			},
 			{
 				type: "validate",
@@ -76,13 +91,18 @@ var histories = [{
 			},
 			{
 				type: "agent",
-				text: "No problem, while you are abroad, all the ATMs have the same fee",
+				text: "Hi, it's Mike",
 				minutes: 80
 			},
 			{
 				type: "agent",
-				text: "Let me send you a map of ATMs at the Munich airport",
+				text: "While you are abroad you can use any ATM, all of them have the fees we send you last week",
 				minutes: 80
+			},
+			{
+				type: "agent",
+				text: "Let me send you a map of the ATMs at the Munich airport",
+				minutes: 81
 			},
 			{
 				type: "agent",
@@ -91,7 +111,7 @@ var histories = [{
 			},
 			{
 				type: "agent",
-				text: "Good trip!",
+				text: "Have a good trip!",
 				minutes: 82
 			}
 		]
@@ -112,12 +132,12 @@ var histories = [{
 			},
 			{
 				type: "agent",
-				text: "Hi, don't worry we will fix it as soon as possible",
+				text: "Hi it's Sussan, don't worry we will fix it as soon as possible",
 				minutes: 90
 			},
 			{
 				type: "agent",
-				text: "You already have a refund in your account",
+				text: "We have just done a refund in your account",
 				minutes: 1024
 			},
 			{
@@ -128,38 +148,78 @@ var histories = [{
 		]
 	},
 	{
-		title: "Incorrect ATM fee",
-		start: "18:28",
+		title: "atm & paymens",
+		start: "10:12",
 		messages: [
 			{
 				type: "customer",
-				text: "You told me that ATM withdrawls has a fee of 2€",
+				text: "Hello, I'm going on a trip to Germany",
 				minutes: 0
 			},
 			{
 				type: "customer",
-				text: "But yesterday I withdraw 150€ and you charge me a fee of 4.5€",
+				text: "What fees are applied when withdrawing money and paying by card?",
 				minutes: 1
 			},
 			{
 				type: "agent",
-				text: "We have reviewed your withdrawal",
-				minutes: 200
+				text: "Hello John, it's Paul here",
+				minutes: 42
 			},
 			{
 				type: "agent",
-				text: "The problem is that the ATM where you withdraw has marked it as credit",
-				minutes: 200
+				text: "Here it is a table with the info you asked for",
+				minutes: 42
 			},
 			{
 				type: "agent",
-				text: "We have just deposit 2.5€ in your account",
-				minutes: 201
+				text: "<img style=\"width: 215px;\" src=\"comisions.png\">",
+				minutes: 43
+			},
+			{
+				type: "agent",
+				text: "Tell us if you need anything else",
+				minutes: 42
+			},
+			{
+				type: "customer",
+				text: "Thanks",
+				minutes: 83
+			},
+			{
+				type: "date",
+				text: "today",
+				minutes: 83
+			},
+			{
+				type: "customer",
+				text: "You told me that ATM withdrawls has a fee of 2€",
+				minutes: 1000
+			},
+			{
+				type: "customer",
+				text: "But yesterday I withdraw 150€ and you charge me a fee of 4.5€",
+				minutes: 1001
+			},
+			{
+				type: "agent",
+				text: "Hello, I'm Andrew. I have reviewed your withdrawal",
+				minutes: 1200
+			},
+			{
+				type: "agent",
+				text: "The problem is that the ATM where you withdraw has applied the credit card fee",
+				minutes: 1200
+			},
+			{
+				type: "agent",
+				text: "We have just done a refund of 2.5€ in your account",
+				minutes: 1201
 			},
 			{
 				type: "agent",
 				text: "Sorry for the inconvenience",
-				minutes: 201
+				minutes: 1201
 			}
 		]
 	}

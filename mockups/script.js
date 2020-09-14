@@ -3,7 +3,9 @@
 var form = document.querySelector('.conversation-compose');
 var conversation = document.querySelector('.conversation-container');
 
-form.addEventListener('submit', newMessage);
+//form.addEventListener('submit', newMessage);
+
+form.addEventListener('submit', nextMessage);
 
 function newMessage(e) {
 	e.preventDefault();
@@ -36,14 +38,31 @@ function buildMessage(text, type, start, minutes) {
 	return element;
 }
 
-function init() {
-	const urlParams = new URLSearchParams(window.location.search);
-	let hist = histories[urlParams.get('hist') || 0]
 
+const urlParams = new URLSearchParams(window.location.search);
+let hist = histories[urlParams.get('hist') || 0];
+document.querySelector('.name span').textContent = hist.title;
+
+var currMeesage = 0;
+
+function nextMessage(e) {
+	e && e.preventDefault();
+
+	var message = hist.messages[currMeesage];
+	if (message) {
+		var elem = buildMessage(message.text, message.type, hist.start, message.minutes);
+	    conversation.appendChild(elem);
+	    conversation.scrollTop = conversation.scrollHeight;
+	}
+	
+	currMeesage ++;
+}
+
+if (urlParams.get('autoplay') === "true") {
 	var time = 0;
-	var min = 0;//1000;
-	var max = 0;//2000;
-	document.querySelector('.name span').textContent = hist.title;
+	var min = 1000;
+	var max = 2000;
+	
 	hist.messages.forEach(message => {
 		var elem = buildMessage(message.text, message.type, hist.start, message.minutes);
 		setTimeout(()=> {
@@ -52,6 +71,7 @@ function init() {
 		}, time);
 		time += min + Math.random() * max
 	});
+} else {
+	nextMessage();
 }
 
-init();
