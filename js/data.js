@@ -37,21 +37,21 @@ var config = {
 			backgroundColor: COLORS.white,
 			data: [].concat(ZERO)
 		},
+		// {
+		// 	label: '',
+		// 	borderColor: COLORS.white,
+		// 	backgroundColor: COLORS.white,
+		// 	data: [].concat(ZERO)
+		// },
 		{
-			label: '',
-			borderColor: COLORS.white,
-			backgroundColor: COLORS.white,
-			data: [].concat(ZERO)
-		},
-		{
-			label: 'Actual',
+			label: 'Current Calls',
 			yAxisID: 'current',
 			borderColor: COLORS.yellow,
 			backgroundColor: COLORS.yellow,
 			data: [].concat(ZERO)
 		},
 		{
-			label: 'Agentes',
+			label: 'Agents',
 			yAxisID: 'current',
 			steppedLine: 'middle',
 			borderColor: COLORS.blue,

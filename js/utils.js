@@ -30,10 +30,6 @@ function recalculateData (chatAgentsPercent, SECONDS_PER_CALL, SECONDS_PER_CHAT,
 		var estimated = calls < next ? (calls + next)/2 : (calls + prev)/2;
 		return Math.max(estimated * 1.0, CALL_AGENTS[i]*1.05);
 
-		// var prev = CALL_AGENTS[i-1] || CALL_AGENTS[0];
-		// var next = CALL_AGENTS[i+1] || CALL_AGENTS[CALL_AGENTS.length-1];
-		// var estimated = calls < next ? (calls + next)/2 : (calls + prev)/2;
-		// return estimated * 1.05;
 	})
 
 	var chatsPending = 0;
@@ -46,9 +42,11 @@ function recalculateData (chatAgentsPercent, SECONDS_PER_CALL, SECONDS_PER_CHAT,
 		return chatsAnsered;
 	});
 
+	TOTAL_CHAT_AGENTS = CHAT_AGENTS.map((chats, i) => DELAYED_CHAT_AGENTS[i] + chats);
+
 	var DATA = {
 		current: {
-			label: 'Actual',
+			label: 'Current Calls',
 			yAxisID: 'current',
 			borderColor: COLORS.grey,
 			backgroundColor: COLORS.grey_med,
@@ -61,7 +59,7 @@ function recalculateData (chatAgentsPercent, SECONDS_PER_CALL, SECONDS_PER_CHAT,
 			data: ZERO,
 		},
 		calls: {
-			label: 'Llamadas',
+			label: 'Calls',
 			borderColor: COLORS.white,
 			backgroundColor: COLORS.yellow,
 			data: CALL_AGENTS,
@@ -70,16 +68,16 @@ function recalculateData (chatAgentsPercent, SECONDS_PER_CALL, SECONDS_PER_CHAT,
 			label: 'Chats',
 			borderColor: COLORS.red,
 			backgroundColor: COLORS.red_med,
-			data: CHAT_AGENTS,
+			data: TOTAL_CHAT_AGENTS,
 		},
-		delayed_chats: {
-			label: 'Chats Async',
-			borderColor: COLORS.orange,
-			backgroundColor: COLORS.orange_med,
-			data: DELAYED_CHAT_AGENTS,
-		},
+		// delayed_chats: {
+		// 	label: 'Chats Async',
+		// 	borderColor: COLORS.orange,
+		// 	backgroundColor: COLORS.orange_med,
+		// 	data: DELAYED_CHAT_AGENTS,
+		// },
 		planified_agents: {
-			label: 'Agentes',
+			label: 'Agents',
 			yAxisID: 'current',
 			steppedLine: 'before',
 			borderColor: COLORS.blue,
@@ -89,7 +87,7 @@ function recalculateData (chatAgentsPercent, SECONDS_PER_CALL, SECONDS_PER_CHAT,
 	};
 
 	dataRoll = [
-		[DATA.calls, DATA.rt_chats, DATA.delayed_chats, DATA.current, DATA.planified_agents]
+		[DATA.calls, DATA.rt_chats, DATA.current, DATA.planified_agents]
 	];
 
 	initData =	[
@@ -105,21 +103,21 @@ function recalculateData (chatAgentsPercent, SECONDS_PER_CALL, SECONDS_PER_CHAT,
 			backgroundColor: COLORS.white,
 			data: [].concat(ZERO)
 		},
+		// {
+		// 	label: '',
+		// 	borderColor: COLORS.white,
+		// 	backgroundColor: COLORS.white,
+		// 	data: [].concat(ZERO)
+		// },
 		{
-			label: '',
-			borderColor: COLORS.white,
-			backgroundColor: COLORS.white,
-			data: [].concat(ZERO)
-		},
-		{
-			label: 'Actual',
+			label: 'Current Calls',
 			yAxisID: 'current',
 			borderColor: COLORS.yellow,
 			backgroundColor: COLORS.yellow,
 			data: [].concat(CURRENT_CALLS)
 		},
 		{
-			label: 'Agentes',
+			label: 'Agents',
 			yAxisID: 'current',
 			steppedLine: 'before',
 			borderColor: COLORS.blue,
