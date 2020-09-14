@@ -26,3 +26,7 @@ canvas {
         opacity: 1
     }
 }
+
+.is-horizontal button {
+    width: 150px;
+}

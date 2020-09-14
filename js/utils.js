@@ -2,7 +2,7 @@ function recalculateData (chatAgentsPercent, SECONDS_PER_CALL, SECONDS_PER_CHAT,
 	var SECONDS_PER_HALF_HOUR = 60 * 30;
 	var CALLS_IN_HALF_HOUR_BY_AGENT = SECONDS_PER_HALF_HOUR / SECONDS_PER_CALL;
 
-	var CURRENT_CALLS = CALLS.map(calls => Math.ceil(calls / CALLS_IN_HALF_HOUR_BY_AGENT));
+	var CURRENT_CALLS = CALLS;//.map(calls => Math.ceil(calls)); /// CALLS_IN_HALF_HOUR_BY_AGENT));
 
 	var AGENTS = CURRENT_CALLS.map( (calls, i) => {
 
@@ -17,10 +17,10 @@ function recalculateData (chatAgentsPercent, SECONDS_PER_CALL, SECONDS_PER_CHAT,
 	var DELAYED_CHAT_AGENTS = [];
 
 	CURRENT_CALLS.forEach(current => {
-		var calls = Math.ceil(current * (100 - chatAgentsPercent) / 100);
-		var chats = Math.ceil(current * (chatAgentsPercent) / 100);
-		CALL_AGENTS.push(calls);//*SECONDS_PER_CALL/450);
-		CHAT_AGENTS.push(chats);//*SECONDS_PER_CHAT/450);
+		var calls = current * (100 - chatAgentsPercent) / 100;
+		var chats = current * (chatAgentsPercent) / 100;
+		CALL_AGENTS.push(calls);
+		CHAT_AGENTS.push(chats*SECONDS_PER_CHAT/SECONDS_PER_CALL);
 	});
 
 	var SMART_AGENTS = CALL_AGENTS.map( (calls, i) => {
@@ -28,7 +28,7 @@ function recalculateData (chatAgentsPercent, SECONDS_PER_CALL, SECONDS_PER_CHAT,
 		var prev = i > 0 ? CALL_AGENTS[i-1] + CHAT_AGENTS[i-1] : CALL_AGENTS[0] + CHAT_AGENTS[0];
 		var next = i < CALL_AGENTS.length-1 ? CALL_AGENTS[i+1] + CHAT_AGENTS[i+1] : CALL_AGENTS[CALL_AGENTS.length-1] + CHAT_AGENTS[CHAT_AGENTS.length-1];
 		var estimated = calls < next ? (calls + next)/2 : (calls + prev)/2;
-		return estimated * 1.0;
+		return Math.max(estimated * 1.0, CALL_AGENTS[i]*1.05);
 
 		// var prev = CALL_AGENTS[i-1] || CALL_AGENTS[0];
 		// var next = CALL_AGENTS[i+1] || CALL_AGENTS[CALL_AGENTS.length-1];

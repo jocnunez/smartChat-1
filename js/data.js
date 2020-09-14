@@ -66,7 +66,7 @@ var config = {
 			text: 'Standar Labor day'
 		},
 		tooltips: {
-            enabled: false,
+            enabled: true,
 			mode: 'index',
 			intersect: true
 		},
@@ -83,8 +83,8 @@ var config = {
 			yAxes: [{
 				stacked: true,
 				ticks: {
-					suggestedMin: 550,
-					suggestedMax: 550
+					suggestedMin: 2000,
+					suggestedMax: 2000
 				},
 				scaleLabel: {
 					display: true,
@@ -94,8 +94,8 @@ var config = {
 			{
 				stacked: false,
 				ticks: {
-					suggestedMin: 550,
-					suggestedMax: 550
+					suggestedMin: 2000,
+					suggestedMax: 2000
 				},
 				id: 'current',
 				display: false
