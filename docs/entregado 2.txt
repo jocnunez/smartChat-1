@@ -1,0 +1,43 @@
+Are there related initiatives in ING? If yes, how does your idea differ from it/them?
+In Spain we have a live chat that is like a call but by text and it's longer than a call. An asynchronous chat for only two products. And Whatsapp for Mortgages management.
+
+But we believe that SmartChat can rule them all and go much further
+
+Can be initiated by the customer or the agent.
+Is private and proprietary.
+Shows the history to a new agent.
+Allows multiple queries at a time.
+Allows to reopen chats.
+Allows sending interactive material.
+Automatically answer the customer.
+Allows a query to go through departments: call center, quality, operations, etc.
+Creates commercial offer adapted to the customer.
+ 
+
+Who are the dominant players in your particular sector? What are their competitive advantages or disadvantages
+Apple and orange have some of the best chat services we've tried
+
+Apple has a support chat.
+Their agents can hardly do anything and they redirect you to the phone.
+It is live, slower than a call.
+If something fails, you have to start again from zero.
+
+Orange uses whatsapp
+One chat for bot and agents
+Two complaints make it chaotic
+If time goes by they change your agent, so you have to repeat all
+The history review is complex
+The agents do not have many capabilities like apple
+Insecurity when giving data and documents as a third party provides a platform.
+
+State your unique selling point compared to your competitors that would make your customer segment adopt your idea.
+We can use this chat with iris and maggie, which will enter 4 countries in parallel and can help agents to better solve problems during the transition of each country to maggie. It will use twilio so any other country could use it.
+
+But mainly to eliminate our current main customer pains
+
+Disinformation of the operator to attend the client in a personalized way.
+Answer "that's the way it is, that's how the service works”.
+Long waiting times.
+Have to change departments.
+Have to call a second time to explain everything from scratch.
+Validate operations through different channels.
