@@ -1,0 +1,1975 @@
+@charset "UTF-8";
+
+/************************************************************************************************
+*************************************************************************************************
+*************************************************************************************************
+*
+* START Enterprise Design Theme
+*
+* PLEASE DONT CHANGE ANYTHING BELOW
+*
+* Version 9.2.1
+* Last changes 18.01.2018
+*
+*************************************************************************************************
+*************************************************************************************************
+*************************************************************************************************/
+
+
+/***************************************/
+/*******  header navigation *******/
+/***************************************/
+
+/* page header background color */
+.hype-page-header--bar
+
+{
+background-color: #ff6200;
+background-color: ;
+}
+
+/* to do bubble */
+#hype-main-navigation .hype--bubble
+ 
+{
+color: #ff6200;
+color: ;
+background-color: ;
+}
+
+/* page header navigation items */
+ul.hype-main-navigation--primary-list > li.hype-main-navigation--item > a,
+
+/* page header three shells icon */
+.hype-main-navigation--three-shells svg, 
+
+/* page header workbench link icon */
+.hype--workbench-link-wrapper svg, 
+
+/* page header close search icon */
+.hype-search-in-header--close-icon svg, 
+
+/* page header search icon */
+.hype-search-in-header--icon svg,
+
+/* page header search */
+.hype-quick-search--search-text,
+
+/* navigation items */
+*:not(.hype-main-navigation--overflow-group-sublist) > .hype-main-navigation--item-top > .hype-main-navigation--item-link > .hype--menu-item-title, 
+*:not(.hype-main-navigation--overflow-group-sublist) > .hype-main-navigation--item-top > .hype-main-navigation--item-link:hover > .hype--menu-item-title,
+
+/* user context menu */
+.hype-user-context-menu--anonymous-user .hype-user-context-menu--anonymous-user-item a,
+
+/* main navigation dropdown icon */
+.hype-main-navigation--primary-list > li > span > .hype-main-navigation--item-menu-icon svg
+
+{
+color: ;
+}
+
+/* main navigation todo flag */
+ul.hype-main-navigation--primary-list .hype-todo--flag {
+color: ;
+background-color: ;
+}
+
+/* main navigation search placeholder color */
+.hype-quick-search--search-text[type="search"]::-webkit-input-placeholder {
+color: ;
+color: ;
+}
+
+.hype-quick-search--search-text[type="search"]::-moz-placeholder {
+color: ;
+color: ;
+}
+
+.hype-quick-search--search-text[type="search"]:-ms-input-placeholder {
+color: ;
+color: ;
+}
+
+.hype-quick-search--search-text[type="search"]:-moz-placeholder {
+color: ;
+color: ;
+}
+
+
+/**************************************************/
+/*******  sections background color *******/
+/**************************************************/
+
+/* campaign sections */
+html.hype-object-type--campaign section:not(.hype-cfg--grid-section-EPR-background-color-white),
+
+/* EPR background section */
+.hype-cfg--grid-section-EPR-background-color
+
+{
+background-color: ;
+}
+
+
+/************************************************/
+/******* overlay background color *******/
+/************************************************/
+
+/* campaign teaser / trend teaser */
+.hype-cb-tiles--campaign-info-wrapper,
+.hype-cfg--grid-section-campaign-hero-header .hype-grids--section-content 
+{
+background-color:  !important;
+}
+
+.hype-cb-tiles--campaign-info-wrapper:hover,
+.hype-cb--trends-image-with-title:hover .hype-cb--info-overlay 
+{
+background-color:  !important;
+}
+
+
+/**************************/
+/*******  Buttons *******/
+/**************************/
+
+/* default btn */
+button:not(.hype--btn-primary),
+button:not(.hype--btn-link), 
+.hype--btn:not(.hype--btn-primary),
+.hype--btn:not(.hype--btn-link) {
+background-color: ;
+color: ;
+}
+button:hover:not(.hype--btn-primary),
+button:not(.hype--btn-link), 
+.hype--btn:hover:not(.hype--btn-primary),
+.hype--btn:not(.hype--btn-link) {
+background-color: ;
+color: ;
+}
+
+
+/* primary btn */
+.hype--btn-primary, 
+.hype--btn-primary:disabled:hover {
+background-color: #ff6200;
+color: ;
+}
+.hype--btn-primary:hover {
+background-color: #60a6da;
+color: ;
+}
+
+/* success btn */
+button.hype--btn-success, 
+button.hype--btn-success:disabled:hover,
+.hype--btn-success, 
+.hype--btn-success:disabled:hover  {
+background-color: ;
+color: ;
+}
+button.hype--btn-success:hover,
+.hype--btn-success:hover {
+background-color: ;
+color: ;
+}
+
+/* danger btn */
+button.hype--btn-danger, 
+button.hype--btn-danger:disabled:hover,
+.hype--btn-danger, 
+.hype--btn-danger:disabled:hover {
+background-color: ;
+color: ;
+}
+button.hype--btn-danger:hover,
+.hype--btn-danger:hover {
+background-color: ;
+color: ;
+}
+
+
+/* campaign -> whats your idea btn */
+.hype-cfg--grid-section-EPR-campaign-whatsyouridea .hype--btn-primary, 
+.hype-cfg--grid-section-EPR-campaign-whatsyouridea .hype--btn-primary:hover 
+{
+color: #ff6200;
+}
+
+button.hype--btn-plus-label,
+button.hype--btn-plus-label:hover,
+button.hype--btn-link,
+button.hype--btn-link:hover,
+button.hype-ce--followbutton {
+background: transparent;
+}
+
+/* post comment button */
+button.hype-fields-df--post-new-comment { 
+background-color: #dee2e6; 
+}  
+button.hype-fields-df--post-new-comment.hype--btn-success { 
+background-color: #82c91e; 
+background-color: ;
+}  
+button.hype-fields-df--post-new-comment.hype--btn-success:hover { 
+background-color: #74b816; 
+background-color: ; 
+} 
+
+
+/************************************/
+/*******  Workflow Color *******/
+/************************************/
+
+.hype-objectphases--active {
+color: #ff6200;
+color: ;
+}
+
+/* campaign */
+.hype-objectphases--timeline-container .hype-objectphases--progress-segment-finished,
+.hype-objectphases--timeline-container .hype-objectphases--active .hype-objectphases--progress-bullet,
+
+/* concept */
+#EPR_workflow_concept .EPR_workflow_column.act .EPR_workflow_statusImage,
+
+/* idea */
+.hype-objectphases--progress-line-finished
+
+{
+background-color: #ff6200;
+background-color: ;
+}
+
+/* create campaign */
+.hype-epr--workflow-campaign ul.hype--progress-bar-tabs li.act 
+{
+background-color: #ff6200;background-color: ;
+}
+.hype-epr--workflow-campaign ul.hype--progress-bar-tabs li.act span::after 
+{
+border-left-color: #ff6200;
+border-left-color: ;
+}
+html[dir="rtl"] .hype-epr--workflow-campaign ul.hype--progress-bar-tabs li.act span::after 
+{
+border-right-color: #ff6200;
+border-right-color: ;
+}
+
+
+/**********************************************/
+/*******  main background color *******/
+/*********************************************/
+
+body {
+background-color: #a8a8a8;
+}
+
+
+/****************************************/
+/*******  evaluation wizard ******* /
+/***************************************/
+
+/* progress bar */
+.hype-ew--tabs ul.tabs_as_progress_bar li.active {
+background: #ff6200;
+border-color: #ff6200;
+}
+
+.hype-ew--tabs ul.tabs_as_progress_bar li.active a:after {
+border-left-color: #ff6200;
+}
+
+html[dir="rtl"] .hype-ew--tabs ul.tabs_as_progress_bar li.active a:after {
+border-right-color: #ff6200;
+border-left-color: transparent;
+}
+
+/* evaluation progress */
+.hype-ew--progress {
+background-color: #ff6200;
+}
+
+
+/****************************************************************************************/
+/* btn text color and overlay color of section with background image  */
+/****************************************************************************************/
+.hype-grids--section-with-background-image:not(.hype-cfg--grid-section-campaign-hero-header) .hype-grids--section-content {
+background-color:  !important;
+}
+
+.hype-grids--section-with-background-image:not(.hype-cfg--grid-section-campaign-hero-header) .hype-grids--section-content button span {
+color: ;
+}
+
+
+/******************************************/
+/******** vision overlay color ********/
+/******************************************/
+
+.hype-cfg--grid-section-EPR-section-with-ci-overlay .hype-grids--section-content {
+background-color:  !important;
+}
+
+
+/**********************************************/
+/******** dashboard text colors ********/
+/*********************************************/
+
+.EPR-myDashboard-todos > div:first-child a,
+.EPR-myDashboard-todos > div:last-child a,
+.hype-cfg--grid-section-EPR-contains-element-w-special-more-link .hype-ce--more-link-important a {
+color: #ff6200;
+color: ;
+}
+
+
+/**************************/
+/******** Footer ********/
+/**************************/
+
+.hype-footer--company-logo {
+background-image: url('?v=1597616736');
+}
+
+#hype-pages--footer ul li a,
+.hype-footer--company-name {
+color: ;
+}
+
+.hype-footer--company-info,
+#hype-pages--footer h5 {
+color: #767676;
+}
+
+
+/**************************************/
+/******** explore gradient ********/
+/**************************************/
+
+.hype-cfg--grid-col-explore-card .hype-grids-ce--content {
+background-image: url('?v=1597616736');
+}
+
+.hype-cfg--grid-col-explore-card-large .hype-grids-ce--content {
+background-image: url('?v=1597616736');
+}
+
+/* sia */
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-sia .hype-grids-ce--content {
+background-color: ;
+}
+
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-sia h1, 
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-sia h2,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-sia .hype-grids-ce--content,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-sia .hype-ce--more-link a {
+color: ;
+}
+
+/* campaigns */
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-campaigns .hype-grids-ce--content {
+background-color: ;
+}
+
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-campaigns h1, 
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-campaigns h2,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-campaigns .hype-grids-ce--content,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-campaigns .hype-ce--more-link a {
+color: ;
+}
+
+/* channels */
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-channels .hype-grids-ce--content {
+background-color: ;
+}
+
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-channels h1, 
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-channels h2,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-channels .hype-grids-ce--content,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-channels .hype-ce--more-link a {
+color: ;
+}
+
+/* ideas */
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-ideas .hype-grids-ce--content {
+background-color: ;
+}
+
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-ideas h1, 
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-ideas h2,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-ideas .hype-grids-ce--content,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-ideas .hype-ce--more-link a {
+color: ;
+}
+
+/* concepts */
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-concepts .hype-grids-ce--content {
+background-color: ;
+}
+
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-concepts h1, 
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-concepts h2,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-concepts .hype-grids-ce--content,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-concepts .hype-ce--more-link a {
+color: ;
+}
+
+/* projects */
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-projects .hype-grids-ce--content {
+background-color: ;
+}
+
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-projects h1, 
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-projects h2,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-projects .hype-grids-ce--content,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-projects .hype-ce--more-link a {
+color: ;
+}
+
+/* trends */
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-trends .hype-grids-ce--content {
+background-color: ;
+}
+
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-trends h1, 
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-trends h2,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-trends .hype-grids-ce--content,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-trends .hype-ce--more-link a {
+color: ;
+}
+
+/* inspiration */
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-inspirations .hype-grids-ce--content {
+background-color: ;
+}
+
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-inspirations h1, 
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-inspirations h2,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-inspirations .hype-grids-ce--content,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-inspirations .hype-ce--more-link a {
+color: ;
+}
+
+/* community */
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-community .hype-grids-ce--content {
+background-color: ;
+}
+
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-community h1, 
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-community h2,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-community .hype-grids-ce--content,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-community .hype-ce--more-link a {
+color: ;
+}
+
+/* news */
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-news .hype-grids-ce--content {
+background-color: ;
+}
+
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-news h1, 
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-news h2,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-news .hype-grids-ce--content,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-news .hype-ce--more-link a {
+color: ;
+}
+
+
+
+/*************************************************/
+/******* campaign/channel wizard ********/
+/*************************************************/
+
+/* pre setup pages */
+.hype-cfg--tab-page-EPR-cwizard--presetup #main {
+  background-color: #ff6200;
+  background-color: ;
+background-color: §ci_cwizard-header-background-color§;
+}
+
+.hype-cfg--tab-page-EPR-cwizard--presetup .hype-cfg--ce-EPR-cw--presetup-btn-large .hype--btn-forward,
+.hype-cfg--tab-page-EPR-cwizard--presetup .hype-cfg--ce-EPR-ew--continue-to-description button {
+  color: #ff6200;
+  color: ;
+  background-color: ;
+}
+
+
+/* title and text color */
+.hype-cfg--tab-page-EPR-cwizard--presetup h1,
+.hype-cfg--tab-page-EPR-cwizard--presetup h2,
+
+/* back link */
+.hype-cfg--tab-page-EPR-cwizard--presetup .hype--btn-link,
+.hype-cfg--tab-page-EPR-cwizard--presetup .hype--btn-link:hover,
+
+/* camapaign description */
+.hype-cfg--tab-page-EPR-cwizard--presetup .hype-fields--text-field-content div, 
+
+/* copy text */
+.hype-cfg--tab-page-EPR-cwizard--presetup .hype-text-ce--content {
+  color: ;
+}
+
+
+/* wizard header */
+.hype-cfg--grid-section-EPR-cwizard--wizard-header,
+
+/* wizard footer */
+.hype-cfg--tab-page-EPR-cwizard .hype-cfg--grid-section-legacyfooter {
+background-color: #ff6200 !important;
+background-color:  !important;
+background-color: §ci_cwizard-header-background-color§ !important;
+}
+
+
+/* wizard title */
+html.hype-cfg--tab-page-EPR-cwizard .hype-grids--section-background-custom h1,
+html.hype-cfg--tab-page-EPR-cwizard .hype-objectphases--wizard-container span {
+  color: ;
+}
+
+
+/* wizard phase timeline */
+html.hype-cfg--tab-page-EPR-cwizard .hype-objectphases--wizard-container .hype-objectphases--progress-number,
+html.hype-cfg--tab-page-EPR-cwizard .hype-objectphases--wizard-container .hype-objectphases--active .hype-objectphases--progress-number {
+  background-color: ;
+  color: ;
+}
+
+html.hype-cfg--tab-page-EPR-cwizard .hype-objectphases--wizard-container .hype-objectphases--name { color: ; }
+
+
+/* header text color for phase and btn */
+html.hype-cfg--tab-page-EPR-cwizard .hype-objectphases--wizard-container .hype-objectphases--active .hype-objectphases--progress-number,
+html.hype-cfg--tab-page-EPR-cwizard .hype-grids--section-background-custom button.hype--btn-primary {
+color: #ff6200;
+color: ;
+background-color: ;
+border-color: ;
+}
+
+
+/* specific guidance and additional fields inputs border color */
+.hype-cfg--field-EPR-cwizard--highlighted-field .hype-html-slot-editor,
+.hype-cfg--field-EPR-selectbox-fullwidth .dropdown button {
+border-color: #ff6200;
+border-color: ;
+}
+
+
+/* (fake) submit button */
+.hype-cwizard--submit-button div {
+background-color: #ff6200;
+background-color: ;
+color: ;
+}
+
+
+/* previous button */
+html.hype-cfg--tab-page-EPR-cwizard .hype-grids--section-background-custom button {
+border-color: ;
+color: ;
+}
+
+html.hype-cfg--tab-page-EPR-cwizard .hype-grids--section-background-custom button:hover { border-color: ;
+background-color: ;
+color: ;
+}
+
+
+/* tabs */
+.hype-cfg--grid-section-EPR-cwizard--wizard-header .hype-tab-bar--active-tab {
+border-color: ;
+color: ;
+}
+
+.hype-cfg--grid-section-EPR-cwizard--wizard-header .hype-tab-bar--tab-link {
+color: ;
+}
+
+/* close cross */
+.hype-cfg--tab-page-EPR-cwizard .hype-ce-delete-object--container .hype-ce-delete-object--icon,
+.hype-cfg--tab-page-EPR-cwizard .hype-ce-delete-object--container:hover .hype-ce-delete-object--icon { 
+color: ; 
+}
+
+
+
+/************************************************************************************************
+*************************************************************************************************
+*************************************************************************************************
+*
+* END Enterprise Design Theme
+*
+*************************************************************************************************
+*************************************************************************************************
+*************************************************************************************************/@charset "UTF-8";
+
+
+/************************************************************************************************
+*************************************************************************************************
+*************************************************************************************************
+
+*
+* START Enterprise Design Theme
+*
+* PLEASE DONT CHANGE ANYTHING BELOW
+*
+* Version 9.2.1
+* Last changes 18.01.2018
+*
+*************************************************************************************************
+*************************************************************************************************
+************************************************************************************************/
+
+
+
+
+/***************************************/
+/*******  header navigation *******/
+/***************************************/
+
+
+
+
+/* page header background color */
+
+
+.hype-page-header--bar {
+   background-color: #ff6200;
+   background-color: ;
+}
+
+
+/* to do bubble */
+
+
+#hype-main-navigation .hype--bubble {
+   color: #ff6200;
+   color: ;
+   background-color: ;
+}
+
+
+
+
+/* page header navigation items */
+
+
+ul.hype-main-navigation--primary-list > li.hype-main-navigation--item > a,
+
+
+/* page header three shells icon */
+
+
+.hype-main-navigation--three-shells svg,
+
+
+/* page header workbench link icon */
+
+
+.hype--workbench-link-wrapper svg,
+
+
+/* page header close search icon */
+
+
+.hype-search-in-header--close-icon svg,
+
+
+/* page header search icon */
+
+
+.hype-search-in-header--icon svg,
+
+
+/* page header search */
+
+
+.hype-quick-search--search-text,
+
+
+/* navigation items */
+
+
+*:not(.hype-main-navigation--overflow-group-sublist) > .hype-main-navigation--item-top > .hype-main-navigation--item-link > .hype--menu-item-title,
+*:not(.hype-main-navigation--overflow-group-sublist) > .hype-main-navigation--item-top > .hype-main-navigation--item-link:hover > .hype--menu-item-title,
+
+
+/* user context menu */
+
+
+.hype-user-context-menu--anonymous-user .hype-user-context-menu--anonymous-user-item a,
+
+
+/* main navigation dropdown icon */
+
+
+.hype-main-navigation--primary-list > li > span > .hype-main-navigation--item-menu-icon svg {
+   color: ;
+}
+
+
+
+
+/* main navigation todo flag */
+
+
+ul.hype-main-navigation--primary-list .hype-todo--flag {
+   color: ;
+   background-color: ;
+}
+
+
+
+
+/* main navigation search placeholder color */
+
+
+.hype-quick-search--search-text[type="search"]::-webkit-input-placeholder {
+   color: ;
+   color: ;
+}
+
+
+.hype-quick-search--search-text[type="search"]::-moz-placeholder {
+   color: ;
+   color: ;
+}
+
+
+.hype-quick-search--search-text[type="search"]:-ms-input-placeholder {
+   color: ;
+   color: ;
+}
+
+
+.hype-quick-search--search-text[type="search"]:-moz-placeholder {
+   color: ;
+   color: ;
+}
+
+
+
+
+/**************************************************/
+/*******  sections background color *******/
+/**************************************************/
+
+
+/* campaign sections */
+
+
+html.hype-object-type--campaign section:not(.hype-cfg--grid-section-EPR-background-color-white),
+
+
+/* EPR background section */
+
+
+.hype-cfg--grid-section-EPR-background-color {
+   background-color: ;
+}
+
+
+
+
+/************************************************/
+/******* overlay background color *******/
+/************************************************/
+
+
+
+
+/* campaign teaser / trend teaser */
+
+
+.hype-cb-tiles--campaign-info-wrapper,
+.hype-cfg--grid-section-campaign-hero-header .hype-grids--section-content {
+   background-color:  !important;
+}
+
+
+.hype-cb-tiles--campaign-info-wrapper:hover,
+.hype-cb--trends-image-with-title:hover .hype-cb--info-overlay {
+   background-color:  !important;
+}
+
+
+
+
+/**************************/
+/*******  Buttons *******/
+/**************************/
+
+
+
+
+/* default btn */
+
+
+button:not(.hype--btn-primary),
+button:not(.hype-ce--followbutton),
+button:not(.hype--btn-link),
+.hype--btn:not(.hype--btn-primary),
+.hype--btn:not(.hype-ce--followbutton),
+.hype--btn:not(.hype--btn-link) {
+   background-color: ;
+   color: ;
+}
+
+
+button:hover:not(.hype--btn-primary),
+button:hover:not(.hype-ce--followbutton),
+button:hover:not(.hype--btn-link),
+.hype--btn:hover:not(.hype--btn-primary),
+.hype--btn:hover:not(.hype-ce--followbutton),
+.hype--btn:hover:not(.hype--btn-link) {
+   background-color: ;
+   color: ;
+}
+
+
+
+
+/* primary btn */
+
+
+.hype--btn-primary,
+.hype--btn-primary:disabled:hover {
+   background-color: #ff6200;
+   color: ;
+}
+
+
+.hype--btn-primary:hover {
+   background-color: #60a6da;
+   color: ;
+}
+
+
+
+
+/* success btn */
+
+
+button.hype--btn-success,
+button.hype--btn-success:disabled:hover,
+.hype--btn-success,
+.hype--btn-success:disabled:hover {
+   background-color: ;
+   color: ;
+}
+
+
+button.hype--btn-success:hover,
+.hype--btn-success:hover {
+   background-color: ;
+   color: ;
+}
+
+
+
+
+/* danger btn */
+
+
+button.hype--btn-danger,
+button.hype--btn-danger:disabled:hover,
+.hype--btn-danger,
+.hype--btn-danger:disabled:hover {
+   background-color: ;
+   color: ;
+}
+
+
+button.hype--btn-danger:hover,
+.hype--btn-danger:hover {
+   background-color: ;
+   color: ;
+}
+
+
+
+
+/* campaign -> whats your idea btn */
+
+
+.hype-cfg--grid-section-EPR-campaign-whatsyouridea .hype--btn-primary,
+.hype-cfg--grid-section-EPR-campaign-whatsyouridea .hype--btn-primary:hover {
+   color: #ff6200;
+}
+
+
+button.hype--btn.hype-ce--followbutton,
+button.hype--btn.hype-ce--followbutton:hover,
+button.hype-sidebar--tab-group,
+button.hype-sidebar--tab-group:hover,
+button.hype--btn-plus-label,
+button.hype--btn-plus-label:hover,
+button.hype--btn-link,
+button.hype--btn-link:hover,
+button.hype-ce--followbutton {
+   background: transparent;
+}
+
+
+button.hype--btn.hype-ce--followbutton {
+   color: #343a40;
+}
+
+
+.hype-ce--followbutton[data-following="true"]:hover,
+.hype-ce--followbutton[data-following="true"].hype--tabbing-focus {
+   color: #f03e3e;
+}
+
+
+.hype-ce--followbutton[data-following="false"]:hover,
+.hype-ce--followbutton.hype--tabbing-focus {
+   color: #74b816;
+}
+
+
+button.hype-sidebar--tab-group {
+   color: #868e96;
+}
+
+
+button.hype-sidebar--tab-group:hover {
+   color: #343a40
+}
+
+
+.hype-sidebar--tab-group.hype-sidebar--active-tab-group:hover {
+   color: #ff6200;
+}
+
+
+
+
+/* post comment button */
+
+
+button.hype-fields-df--post-new-comment {
+   background-color: #dee2e6;
+}
+
+
+button.hype-fields-df--post-new-comment.hype--btn-success {
+   background-color: #82c91e;
+   background-color: ;
+}
+
+
+button.hype-fields-df--post-new-comment.hype--btn-success:hover {
+   background-color: #74b816;
+   background-color: ;
+}
+
+
+
+
+/************************************/
+/*******  Workflow Color *******/
+/************************************/
+
+
+.hype-objectphases--active {
+   color: #ff6200;
+   color: ;
+}
+
+
+
+
+/* campaign */
+
+
+.hype-objectphases--timeline-container .hype-objectphases--progress-segment-finished,
+.hype-objectphases--timeline-container .hype-objectphases--active .hype-objectphases--progress-bullet,
+
+
+/* concept */
+
+
+#EPR_workflow_concept .EPR_workflow_column.act .EPR_workflow_statusImage,
+
+
+/* idea */
+
+
+.hype-objectphases--progress-line-finished {
+   background-color: #ff6200;
+   background-color: ;
+}
+
+
+
+
+/* create campaign */
+
+
+.hype-epr--workflow-campaign ul.hype--progress-bar-tabs li.act {
+   background-color: #ff6200;
+   background-color: ;
+}
+
+
+.hype-epr--workflow-campaign ul.hype--progress-bar-tabs li.act span::after {
+   border-left-color: #ff6200;
+   border-left-color: ;
+}
+
+
+html[dir="rtl"] .hype-epr--workflow-campaign ul.hype--progress-bar-tabs li.act span::after {
+   border-right-color: #ff6200;
+   border-right-color: ;
+}
+
+
+
+
+/**********************************************/
+/*******  main background color *******/
+/*********************************************/
+
+
+body {
+   background-color: #a8a8a8;
+}
+
+
+
+
+/****************************************/
+/*******  evaluation wizard ******* /
+/***************************************/
+
+
+
+
+/* progress bar */
+
+
+.hype-ew--tabs ul.tabs_as_progress_bar li.active {
+   background: #ff6200;
+   border-color: #ff6200;
+}
+
+
+.hype-ew--tabs ul.tabs_as_progress_bar li.active a:after {
+   border-left-color: #ff6200;
+}
+
+
+html[dir="rtl"] .hype-ew--tabs ul.tabs_as_progress_bar li.active a:after {
+   border-right-color: #ff6200;
+   border-left-color: transparent;
+}
+
+
+
+
+/* evaluation progress */
+
+
+.hype-ew--progress {
+   background-color: #ff6200;
+}
+
+
+
+
+/****************************************************************************************/
+/* btn text color and overlay color of section with background image  */
+/****************************************************************************************/
+
+
+.hype-grids--section-with-background-image:not(.hype-cfg--grid-section-campaign-hero-header) .hype-grids--section-content {
+   background-color:  !important;
+}
+
+
+.hype-grids--section-with-background-image:not(.hype-cfg--grid-section-campaign-hero-header) .hype-grids--section-content button span {
+   color: ;
+}
+
+
+
+
+/******************************************/
+/******** vision overlay color ********/
+/******************************************/
+
+
+.hype-cfg--grid-section-EPR-section-with-ci-overlay .hype-grids--section-content {
+   background-color:  !important;
+}
+
+
+
+
+/**********************************************/
+/******** dashboard text colors ********/
+/*********************************************/
+
+
+.EPR-myDashboard-todos > div:first-child a,
+.EPR-myDashboard-todos > div:last-child a,
+.hype-cfg--grid-section-EPR-contains-element-w-special-more-link .hype-ce--more-link-important a {
+   color: #ff6200;
+   color: ;
+}
+
+
+
+
+/**************************/
+
+
+
+
+/******** Footer ********/
+
+
+
+
+/**************************/
+
+
+.hype-footer--company-logo {
+   background-image: url('?v=1597616736');
+}
+
+
+#hype-pages--footer ul li a,
+.hype-footer--company-name {
+   color: ;
+}
+
+
+.hype-footer--company-info,
+#hype-pages--footer h5 {
+   color: #767676;
+}
+
+
+
+
+/**************************************/
+
+
+
+
+/******** explore gradient ********/
+
+
+
+
+/**************************************/
+
+
+.hype-cfg--grid-col-explore-card .hype-grids-ce--content {
+   background-image: url('?v=1597616736');
+}
+
+
+.hype-cfg--grid-col-explore-card-large .hype-grids-ce--content {
+   background-image: url('?v=1597616736');
+}
+
+
+
+
+/* sia */
+
+
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-sia .hype-grids-ce--content {
+   background-color: ;
+}
+
+
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-sia h1,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-sia h2,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-sia .hype-grids-ce--content,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-sia .hype-ce--more-link a {
+   color: ;
+}
+
+
+
+
+/* campaigns */
+
+
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-campaigns .hype-grids-ce--content {
+   background-color: ;
+}
+
+
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-campaigns h1,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-campaigns h2,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-campaigns .hype-grids-ce--content,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-campaigns .hype-ce--more-link a {
+   color: ;
+}
+
+
+
+
+/* channels */
+
+
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-channels .hype-grids-ce--content {
+   background-color: ;
+}
+
+
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-channels h1,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-channels h2,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-channels .hype-grids-ce--content,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-channels .hype-ce--more-link a {
+   color: ;
+}
+
+
+
+
+/* ideas */
+
+
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-ideas .hype-grids-ce--content {
+   background-color: ;
+}
+
+
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-ideas h1,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-ideas h2,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-ideas .hype-grids-ce--content,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-ideas .hype-ce--more-link a {
+   color: ;
+}
+
+
+
+
+/* concepts */
+
+
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-concepts .hype-grids-ce--content {
+   background-color: ;
+}
+
+
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-concepts h1,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-concepts h2,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-concepts .hype-grids-ce--content,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-concepts .hype-ce--more-link a {
+   color: ;
+}
+
+
+
+
+/* projects */
+
+
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-projects .hype-grids-ce--content {
+   background-color: ;
+}
+
+
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-projects h1,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-projects h2,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-projects .hype-grids-ce--content,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-projects .hype-ce--more-link a {
+   color: ;
+}
+
+
+
+
+/* trends */
+
+
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-trends .hype-grids-ce--content {
+   background-color: ;
+}
+
+
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-trends h1,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-trends h2,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-trends .hype-grids-ce--content,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-trends .hype-ce--more-link a {
+   color: ;
+}
+
+
+
+
+/* inspiration */
+
+
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-inspirations .hype-grids-ce--content {
+   background-color: ;
+}
+
+
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-inspirations h1,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-inspirations h2,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-inspirations .hype-grids-ce--content,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-inspirations .hype-ce--more-link a {
+   color: ;
+}
+
+
+
+
+/* community */
+
+
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-community .hype-grids-ce--content {
+   background-color: ;
+}
+
+
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-community h1,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-community h2,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-community .hype-grids-ce--content,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-community .hype-ce--more-link a {
+   color: ;
+}
+
+
+
+
+/* news */
+
+
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-news .hype-grids-ce--content {
+   background-color: ;
+}
+
+
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-news h1,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-news h2,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-news .hype-grids-ce--content,
+.hype-cfg--grid-col-explore-card.hype-cfg--grid-col-explore-card-news .hype-ce--more-link a {
+   color: ;
+}
+
+
+
+
+/*************************************************/
+
+
+
+
+/******* campaign/channel wizard ********/
+
+
+
+
+/*************************************************/
+
+
+
+
+/* pre setup pages */
+
+
+.hype-cfg--tab-page-EPR-cwizard--presetup #main {
+   background-color: #ff6200;
+   background-color: ;
+   background-color: §ci_cwizard-header-background-color§;
+}
+
+
+.hype-cfg--tab-page-EPR-cwizard--presetup .hype-cfg--ce-EPR-cw--presetup-btn-large .hype--btn-forward,
+.hype-cfg--tab-page-EPR-cwizard--presetup .hype-cfg--ce-EPR-ew--continue-to-description button {
+   color: #ff6200;
+   color: ;
+   background-color: ;
+}
+
+
+
+
+/* title and text color */
+
+
+.hype-cfg--tab-page-EPR-cwizard--presetup h1,
+.hype-cfg--tab-page-EPR-cwizard--presetup h2,
+
+
+/* back link */
+
+
+.hype-cfg--tab-page-EPR-cwizard--presetup .hype--btn-link,
+.hype-cfg--tab-page-EPR-cwizard--presetup .hype--btn-link:hover,
+
+
+/* camapaign description */
+
+
+.hype-cfg--tab-page-EPR-cwizard--presetup .hype-fields--text-field-content div,
+
+
+/* copy text */
+
+
+.hype-cfg--tab-page-EPR-cwizard--presetup .hype-text-ce--content {
+   color: ;
+}
+
+
+
+
+/* wizard header */
+
+
+.hype-cfg--grid-section-EPR-cwizard--wizard-header,
+
+
+/* wizard footer */
+
+
+.hype-cfg--tab-page-EPR-cwizard .hype-cfg--grid-section-legacyfooter {
+   background-color: #ff6200 !important;
+   background-color:  !important;
+   background-color: §ci_cwizard-header-background-color§ !important;
+}
+
+
+
+
+/* wizard title */
+
+
+html.hype-cfg--tab-page-EPR-cwizard .hype-grids--section-background-custom h1,
+html.hype-cfg--tab-page-EPR-cwizard .hype-objectphases--wizard-container span {
+   color: ;
+}
+
+
+
+
+/* wizard phase timeline */
+
+
+html.hype-cfg--tab-page-EPR-cwizard .hype-objectphases--wizard-container .hype-objectphases--progress-number,
+html.hype-cfg--tab-page-EPR-cwizard .hype-objectphases--wizard-container .hype-objectphases--active .hype-objectphases--progress-number {
+   background-color: ;
+   color: ;
+}
+
+
+html.hype-cfg--tab-page-EPR-cwizard .hype-objectphases--wizard-container .hype-objectphases--name {
+   color: ;
+}
+
+
+
+
+/* header text color for phase and btn */
+
+
+html.hype-cfg--tab-page-EPR-cwizard .hype-objectphases--wizard-container .hype-objectphases--active .hype-objectphases--progress-number,
+html.hype-cfg--tab-page-EPR-cwizard .hype-grids--section-background-custom button.hype--btn-primary {
+   color: #ff6200;
+   color: ;
+   background-color: ;
+   border-color: ;
+}
+
+
+
+
+/* specific guidance and additional fields inputs border color */
+
+
+.hype-cfg--field-EPR-cwizard--highlighted-field .hype-html-slot-editor,
+.hype-cfg--field-EPR-selectbox-fullwidth .dropdown button {
+   border-color: #ff6200;
+   border-color: ;
+}
+
+
+
+
+/* (fake) submit button */
+
+
+.hype-cwizard--submit-button div {
+   background-color: #ff6200;
+   background-color: ;
+   color: ;
+}
+
+
+
+
+/* previous button */
+
+
+html.hype-cfg--tab-page-EPR-cwizard .hype-grids--section-background-custom button {
+   border-color: ;
+   color: ;
+}
+
+
+html.hype-cfg--tab-page-EPR-cwizard .hype-grids--section-background-custom button:hover {
+   border-color: ;
+   background-color: ;
+   color: ;
+}
+
+
+
+
+/* tabs */
+
+
+.hype-cfg--grid-section-EPR-cwizard--wizard-header .hype-tab-bar--active-tab {
+   border-color: ;
+   color: ;
+}
+
+
+.hype-cfg--grid-section-EPR-cwizard--wizard-header .hype-tab-bar--tab-link {
+   color: ;
+}
+
+
+
+
+/* close cross */
+
+
+.hype-cfg--tab-page-EPR-cwizard .hype-ce-delete-object--container .hype-ce-delete-object--icon,
+.hype-cfg--tab-page-EPR-cwizard .hype-ce-delete-object--container:hover .hype-ce-delete-object--icon {
+   color: ;
+}
+
+
+
+
+/************************************************************************************************
+
+
+*************************************************************************************************
+
+
+*************************************************************************************************
+
+
+*
+
+
+* END Enterprise Design Theme
+
+
+*
+
+
+*************************************************************************************************
+
+
+*************************************************************************************************
+
+
+*************************************************************************************************/
+
+/************* ING */
+
+/***************************************/
+/*******  fonts *******/
+/***************************************/
+
+
+@font-face {
+    font-family: 'INGMe';
+    src: url('/export/fonts/ingme/INGMeWeb-Regular.woff2?v=1597616736') format('woff2'),
+         url('/export/fonts/ingme/INGMeWeb-Regular.woff?v=1597616736') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+font-family: 'INGMe';
+    src: url('/export/fonts/ingme/INGMeWeb-Italic.woff2?v=1597616736') format('woff2'),
+         url('/export/fonts/ingme/INGMeWeb-Italic.woff?v=1597616736') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'INGMe';
+    src: url('/export/fonts/ingme/INGMeWeb-Bold.woff2?v=1597616736') format('woff2'),
+         url('/export/fonts/ingme/INGMeWeb-Bold.woff?v=1597616736') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'INGMe';
+    src: url('/export/fonts/ingme/INGMeWeb-BoldItalic.woff2?v=1597616736') format('woff2'),
+         url('/export/fonts/ingme/INGMeWeb-BoldItalic.woff?v=1597616736') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+body {
+font-family: 'INGMe', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.sticky {
+background-image: none;
+}
+
+/* expandable toolbox */
+div.menuitem_startpage div.expandable_toolbox {
+box-shadow: 0 2px 3px rgba(66,66,66,0.15);
+border-radius: 5px;
+overflow: hidden;
+background-color: #fff;
+}
+
+div.menuitem_startpage div.expandable_toolbox div.expandable_toolbox {
+box-shadow: none;
+background-color: transparent;
+}
+
+div.menuitem_startpage div.expandable_toolbox div.simple_details:hover {
+opacity: 1;
+border-radius: 5px;
+}
+
+div#center #main_navigation ul#top_nav > li > ul li:hover > a,
+div#center #main_navigation ul#top_nav > li > ul li:hover > a, 
+div#center #main_navigation ul#top_nav > li > ul li.active_menu_item > a,
+div#center #main_navigation ul#top_nav > li > ul li.sublist:hover > a {
+color: #ff6200;
+}
+
+#center .menuItem-h1-toolkittitle{
+text-align:center;
+font-size:28px;
+}
+
+
+.innovationtoolkitwrapper h1{
+ font-size: 35px !important;    color: #fff !important;    position: absolute !important;    border: none;    left: 325px;    top: 98px;    width: 290px;    text-align: center;    line-height: 34px;    border-bottom: 0px solid #fff !important;    transition: 0.5s;
+
+}
+
+
+
+
+.innovationtoolkitwrapper .dashboard_column{ 
+  transition:0.2s;
+}
+
+.innovationtoolkitwrapper .dashboard_column:hover{ 
+  opacity:0.7;
+}
+
+.whotocontact{
+top: 230px; position: relative;
+
+}
+
+#center .menuItem-h1-processtools, #center .menuItem-h1-accordioncustom, #center .menuItem-h1-whotocontact{
+ text-align: center;    background: url('http://www.innovationstudio.ninja/bootcampimg/toolkitheader.png?v=1597616736') no-repeat center;    padding: 110px 0px;    width: 100%;    background-size: cover;    /* background: red; */    color: #fff !important;    font-size: 30px !important;    position: absolute;    left: -34px;    top: -43px;    width: 970px;
+}
+
+ #center .menuItem-h1-accordioncustom{
+ background: url('http://www.innovationstudio.ninja/bootcampimg/processheader.png?v=1597616736') no-repeat center;
+}
+
+#center .menuItem-h1-whotocontact{
+ background: url('http://www.innovationstudio.ninja/bootcampimg/whotocontact.jpg?v=1597616736') no-repeat center;
+
+}
+
+div#content .innovationtoolkitwrapper div.moreLink a{
+ text-decoration: none;
+    width: 300px;
+    color: #fff;
+    top: -156px;
+    font-size: 35px;
+    font-family: "INGme";font-weight: bold;
+    left: 93px;
+   text-align:center; line-height:32px;
+}
+
+div#content .innovationtoolkitwrapper div.moreLinkParent{
+position: absolute;
+z-index: 99;
+text-align: center;
+top: 98px;
+left:255px;
+}
+
+div#content .innovationtoolkitwrapper .last div.moreLinkParent{
+top: 100px; left: 361px;
+}
+
+
+div#content .innovationtoolkitwrapper div.moreLink{
+background:none;
+}
+
+div#content .innovationtoolkitwrapper .dashboard_column.last .menu_item{
+
+}
+
+div#content .innovationtoolkitwrapper .dashboard_column.last .moreLink a{
+top: -174px;
+}
+
+.accordioncustom{
+padding-top:260px;
+}
+
+
+
+.accordioncustom .explanation h2 {
+ border: 1px solid #ddd;    border-radius: 6px;    padding: 20px;    font-size: 1.5em;
+transition:0.2s;
+cursor:pointer;
+}
+
+
+.accordioncustom .explanation h2:hover{
+background:#ff6200;
+color:#fff;
+}
+
+
+.accordioncustom .explanation .collapsible_content{
+padding:5px;
+margin-bottom:20px;
+}
+
+
+.accordioncustom .explanation .collapsible_content p:first-child{
+/*color:#333!important;
+font-weight:bold;
+font-size:1.4em;
+font-family: INGMe;
+
+margin-bottom:10px;*/
+}
+.accordioncustom .explanation .collapsible_content h4{
+color:#333!important;
+font-weight:bold;
+font-size:1.4em;
+font-family: INGMe;
+margin-bottom:10px;
+
+}
+
+.accordioncustom .explanation .collapsible_content img{
+
+width: 100%;
+margin: 20px 0px;
+}
+
+.accordioncustom .explanation .collapsible_content p, .accordioncustom .explanation .collapsible_content ul li, .accordioncustom .explanation .collapsible_content ol li{
+color:#333!important;
+font-family: INGMe;
+font-size:16px;
+line-height:28px;
+}
+
+.menuitem-dashboard-innovationtoolkitwrapper{
+left: -34px; position: absolute; /* width: 100%; */ width: 977px; 
+}
+
+.menuitem-dashboard-innovationtoolkitwrapper div.menu_item.menu_item_button, div.field_in_menuitem{
+padding-top:6px;
+}
+.menuitem-dashboard-innovationtoolkitwrapper img{ 
+width:100%;
+max-width: 970px;
+}
+
+.download-button{
+color: #ff6200; border: 2px solid #ff6200; padding: 10px 25px; border-radius: 6px; display: inline-block; margin-bottom: 10px; text-decoration: none; transition:0.2s; font-size:14px; 
+
+}
+.download-button svg{
+ width: 20px;
+    height: 22px;
+    margin-bottom: -6px;
+    margin-right: 8px;
+transition:0.2s;
+}
+
+.download-button:hover{
+color: #fff; background:#ff6200;
+
+}
+
+.download-button:hover svg path{
+fill:#fff;
+
+}
+.processtools .last .dashboard_element:nth-child(1){
+display:none;
+}
+.menuitem_toolkittitle div#center div#main{
+min-height:723px !important;
+}
+html{
+background-color: #fff; background-image: url('http://www.innovationstudio.ninja/bootcampimg/background_placeholder.png?v=1597616736'); background-size: cover;
+
+}
+
+div.menuitem_startpage div.expandable_toolbox div.more_details {
+background-image: url('§x_startpage_howto_bg§?v=1597616736');
+}
+
+div.menuitem_startpage div.expandable_toolbox div.openDetails div.arrow {
+  background: none;
+  border: 5px solid #ffffff;
+  border-color: #ffffff transparent transparent;
+  width: 0;
+  height: 0;
+}
+
+.innovationtoolkitwrapper .dashboard_column{
+width:100% !important;
+}
+
+
+.innovationtoolkitwrapper div.menu_item.menu_item_button, .innovationtoolkitwrapper div.field_in_menuitem{
+padding-bottom:0px;
+}
+
+.contacts h3{
+			color:#ff6200;
+font-size:22px;
+margin-bottom:40px;
+		}
+
+		.contact-item{
+			width:30%;
+margin-right:2%;
+			display:inline-block;
+			margin-bottom:30px;
+		}
+
+		.contact-item h4{
+			font-size:18px;
+			margin-bottom:2px;
+		}
+
+		.contact-item span{
+			color:#767676;
+font-family:'INGme', arial, sans-serif;
+font-size:13px;
+		}
+
+.menuitem_whotocontact div#center div#main{
+height:1670px;
+}
+.action_box .action_box_content .action_box_column .action_box_element_button .colored button {
+    background-color: #ff6600;    
+    background-image: -moz-linear-gradient( top ,#ff6600,#e55c00);
+    background-image: -ms-linear-gradient( top,#ff6600,#e55c00);
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#ff6600),to(#e55c00));
+    background-image: -o-linear-gradient( top,#ff6600,#e55c00);
+    background-image: linear-gradient( top,#ff6600,#e55c00);
+}
+.action_box .action_box_content .action_box_column .action_box_element_button .colored button:hover {
+  background-position: 0 0;
+}
+
+.action_box .action_box_content .action_box_column .action_box_element_button .colored button > span > span {
+    color: #FFFFFF;
+}
+
+.action_box .action_box_content .action_box_column .action_box_element_button .colored button > span > i {
+    background: transparent url('§action_box_merge_idea_button§?v=1597616736') no-repeat scroll 0 0;
+}
+
+/* innovation toolkit styling */
+
+.collapsible_section h3{
+color:#ff6200;
+font-weight:bold;
+}
+
+
+
+.collapsible_section h4{
+font-size:16px;
+font-weight:bold;
+}
+
+
+.collapsible_section p{
+font-size:16px;
+line-height:180%;
+margin-bottom: 15px;
+margin-top: 15px;
+}
+
+
+.collapsible_section p em{
+font-weight:bold;
+}
+
+
+.collapsible_section li{
+font-size:16px;
+}
+
+footer{
+background:#EBEBEB;
+}
+
+
+footer ul li a,
+.hype-footer--company-name
+
+{
+color:#767676 !important;
+}
+
+
+/* Sidebar icon fix */
+
+
+.hype-object .hype-cfg--grid-section-object-type-custom .hype-sidebar--open-button.hype-sidebar--closed{
+background-image:url("data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0iMjRweCIgaGVpZ2h0PSIxNnB4IiB2aWV3Qm94PSIwIDAgMjQgMTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+ICAgICAgICAgICAgICAgIDxkZWZzPjwvZGVmcz4gICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIj4gICAgICAgIDxnIGlkPSJJbnRyb2R1Y3Rpb24tU2lkZWJhci1Db3B5IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTM3Mi4wMDAwMDAsIC0xMTkuMDAwMDAwKSIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjIiPiAgICAgICAgICAgIDxnIGlkPSJHcm91cC0xMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTM3My4wMDAwMDAsIDEyMC4wMDAwMDApIj4gICAgICAgICAgICAgICAgPHBhdGggZD0iTTAsNyBMMjIsNyIgaWQ9IlNoYXBlIj48L3BhdGg+ICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0wLDAgTDIyLDAiIGlkPSJTaGFwZSI+PC9wYXRoPiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMCwxNCBMMjIsMTQiIGlkPSJTaGFwZSI+PC9wYXRoPiAgICAgICAgICAgIDwvZz4gICAgICAgIDwvZz4gICAgPC9nPjwvc3ZnPg==");
+}
+
+
+
+
+
+/*** replace StartMenu with Home Icon ***/
+ul.hype-main-navigation--primary-list li.hype-cfg--menu-nav-start-page a.hype-main-navigation--item-link  span.hype--menu-item-title  {
+content: '';
+background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA2CAMAAAC7m5rvAAABwlBMVEX////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////aQXEwAAAAlXRSTlMAAQIDBQYHCAoLDA0ODxATFBUWFxoeHyEoKistLjI0NTY8QURFRkdLTVJTVFVWWFpbXV5fYWNkZ2xtbnBxc3R1dnd7fH1+f4GDhIeIi42Oj5CSlpiam52goaKjpKWmp6ipqqusra+wsbK0tba9vr/BwsPGx8rLzc7P0NHS09fY2d3f4eLj5Orr7e/y8/T19vj5+vz9/gnf4lYAAAHHSURBVHgB7c/ZVxJxGMbxh8FRELWs0MoWU1qKLDOpLNtL23cTixazjPZsKZAMWywrAxSe/7ffO87xFDDT4CWHz9178X3PeVBRbmq9cGzNvp5dHojOiQ874dQAmdoApSdNZnrh0BCZDgDaiTkqc31uOBJWWTv08zkacherHWdtVUNccNPnMEvtGKYYG6OILnOWzU5RjDY0PqF41uQkMz1sAOpvUbxvwf8Mct61WtfJfq3mKsXHVthzRSiyp9z6JfKy7urPUvkagK3gNJXZo/BepxKuw6EMle9B2OieofJrLxpHaHiwHKGfVH53w4p2cP5zB/xPaXrRjG3fqGQOuFBU1dmcuWPlWy54twrtn6lkT+sownOF4tN6rJ3gX5Lr0DpJMeBFgepBingL2r7wH1MbsTpGEa5BviDFy2ZsnWaeH0H4n1N0IF+IyqOl6JphgdQeLBmlEkK+FW/ISD16UywifRh1N8hxPwr4d2/xYn+WReWOwLO5qwkW7tPCCOwM08KdSrbIbDL6WIkmS8zOwHCsxOwcDMfLKLtnld2FnQhNF2Doo+k27AReJROxWCye6IRh+3hcnYnk602w5fbpmoBJE7rPjXJQ8Qd30K3RMUOqzgAAAABJRU5ErkJggg==);
+background-size: cover;
+
+    height: 30px;
+    width: 30px;
+    display: block;
+    margin-top: -6px;
+margin-right: -4px;
+}
+
+
+ul.hype-main-navigation--primary-list li.hype-cfg--menu-nav-start-page span.hype--menu-item-title {
+font-size: 0!important;
+}

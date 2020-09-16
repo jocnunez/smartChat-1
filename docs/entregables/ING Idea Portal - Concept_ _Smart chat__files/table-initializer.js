@@ -1,0 +1,1 @@
+define(["jquery","modules/ui-widgets/component","modules/util/event-registry"],function(c,k,a){function g(){k.apply(this,arguments)}g.prototype=Object.create(k.prototype);g.prototype.onContentLoaded=function(a,e){a.each(function(){tableModule.initializeTableDiv(c(this))})};return new g});

@@ -76,8 +76,13 @@ var config = {
 
                     if (label) {
                         label += ': ';
-                    }
-                    label += Math.ceil(tooltipItem.yLabel);
+					}
+					if (label === 'Agents: ') {
+						var CALLS_IN_HALF_HOUR_BY_AGENT = 60 * 30 / 450;
+						label += Math.ceil(tooltipItem.yLabel/CALLS_IN_HALF_HOUR_BY_AGENT);
+					} else {
+						label += Math.ceil(tooltipItem.yLabel);
+					}
                     return label;
                 }
             }

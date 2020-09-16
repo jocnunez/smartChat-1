@@ -1,0 +1,129 @@
+Phase 1
+
+6 Months MVP   
+1 Full stack developer 
+1 Front end developer 
+2 back end developers 
+1 Dev ops - Part time 
+PO/Scrum master
+
+A squad in less than 6 months can put into production a simple asynchronous chat with queries track record. 
+
+
+Phase 2
+
+Once this MVP  service is done we can go adding the rest of functionalities:
+
+Automatic responses at the time of falls
+Bi-directional file sending
+Automatic responses by content
+Contents catalogue
+Catalog of previous answers
+Integration with validations and authorizations
+AI
+Others ordered by the customers or the product itself
+Could we get customers to help each other?
+
+
+
+
+The main source of income is cost savings:
+
+Agents can get information without having to keep the customer waiting.
+Sending documents eliminates a lot of time.
+Validations without having the agent waiting.
+Autoresponders in drop-offs and common issues.
+Integration between departments without bureaucracy.
+Catalog of answers and interactive material saves time explaining it.
+Saving time by filling in the gaps
+Simplifies Call Center planning
+
+Conversation analysis will generate more income from the commercial offers after finishing a communication.
+
+Simulations:
+
+0% SmartChat
+
+10% SmartChat
+
+30% SmartChat
+
+Reducing the time used saves up to 25%
+
+Interactive graph to be able to modify the values ​​and see the result in real time
+
+https://my.ing.net/personal/ad_ik22lf/Documents/smartchat/chart.html
+
+
+
+
+Surveys told us that customers under 30's would always choose the chat. Up to 50 would chat except for emergencies. Over 70 would call
+
+We estimate that every year it will go up, not only because individuals will accept it more but because in 10 years the group that always prefers the chat will be the majority, and the majority of clients that interest us will be in that range.
+
+
+Main gains:
+
+To be able to send a query at any time or place
+Avoid active waiting
+Reduce the total time spent
+Send documentation easily and securely 
+Validate operations
+To be able to reopen a query
+Avoid having to repeat the same thing in each call
+Receive interactive material
+To be able to recover queries from history
+Eliminate accessibility barriers
+
+
+
+
+
+In Spain we have a live chat that is like a call but by text and it's longer than a call. An asynchronous chat for only two products. And Whatsapp for Mortgages management.
+
+But we believe that SmartChat can rule them all and go much further:
+
+Can be initiated by the customer or the agent.
+Is private and proprietary.
+Shows the history to a new agent.
+Allows multiple queries at a time.
+Allows to reopen chats.
+Allows sending interactive material.
+Automatically answer the customer.
+Allows a query to go through departments: call center, quality, operations, etc.
+Creates commercial offer adapted to the customer.
+
+
+
+
+
+Apple and orange have some of the best chat services we've tried:
+
+Apple has a support chat.
+Their agents can hardly do anything and they redirect you to the phone.
+It is live, slower than a call.
+If something fails, you have to start again from zero.
+
+Orange uses whatsapp
+One chat for bot and agents
+Two complaints make it chaotic
+If time goes by they change your agent, so you have to repeat all
+The history review is complex
+The agents do not have many capabilities like apple
+Insecurity when giving data and documents as a third party provides a platform.
+
+
+
+
+We can use this chat with iris and maggie, which will enter 4 countries in parallel and can help agents to better solve problems during the transition of each country to maggie. It will use twilio so any other country could use it.
+
+But mainly to eliminate our current main customer pains:
+
+Disinformation of the operator to attend the client in a personalized way.
+Answer "that's the way it is, that's how the service works”.
+Long waiting times.
+Have to change departments.
+Have to call a second time to explain everything from scratch.
+Validate operations through different channels.
+
+
