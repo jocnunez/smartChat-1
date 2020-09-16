@@ -87,10 +87,26 @@ window.onload = function () {
         updateSmartData();
     });
 
-    document.getElementById('chatButton').addEventListener('click', function () {
+    function customData() {
         dataRoll.push(dataRoll.shift());
         updateData(false);
         graphic.update();
-    });
+        if (saving.classList.contains('hide')) {
+            saving.classList.remove('hide');
+            reduction.classList.remove('hide');
+            usage.classList.remove('hide');
+        }
+    }
+
+    document.getElementById('chatButton').addEventListener('click', customData);
+
+    document.getElementById('chats-secconds').addEventListener('focusout', customData);
+    document.getElementById('calls-secconds').addEventListener('focusout', customData);
+    document.getElementById('chat-agents-percent').addEventListener('focusout', customData);
+
+    document.getElementById('chats-secconds').addEventListener('change', customData);
+    document.getElementById('calls-secconds').addEventListener('change', customData);
+    document.getElementById('chat-agents-percent').addEventListener('change', customData);
+    document.getElementById('data-table').addEventListener('change', customData);
 
 };

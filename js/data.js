@@ -63,12 +63,24 @@ var config = {
 		responsive: true,
 		title: {
 			display: true,
-			text: 'Standar Labor day'
+			text: 'standar working day'
 		},
 		tooltips: {
             enabled: true,
 			mode: 'index',
-			intersect: true
+			intersect: true,
+			callbacks: {
+                label: function(tooltipItem, data) {
+					if (!data.datasets[tooltipItem.datasetIndex].label) return;
+                    var label = data.datasets[tooltipItem.datasetIndex].label || '';
+
+                    if (label) {
+                        label += ': ';
+                    }
+                    label += Math.ceil(tooltipItem.yLabel);
+                    return label;
+                }
+            }
 		},
 		hover: {
 			mode: 'index'

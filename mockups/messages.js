@@ -1,5 +1,5 @@
 var histories = [{
-		title: "atm & paymens",
+		title: "ATM & payments",
 		start: "10:12",
 		messages: [
 			{
@@ -76,12 +76,12 @@ var histories = [{
 		]
 	},
 	{
-		title: "Munich Airport ATMs",
+		title: "Zurich Airport ATMs",
 		start: "16:54",
 		messages: [
 			{
 				type: "customer",
-				text: "I'm about to fly to Munich",
+				text: "I'm about to fly to Zurich",
 				minutes: 0
 			},
 			{
@@ -101,7 +101,7 @@ var histories = [{
 			},
 			{
 				type: "agent",
-				text: "Let me send you a map of the ATMs at the Munich airport",
+				text: "Let me send you a map of the ATMs at the Zurich airport",
 				minutes: 81
 			},
 			{
@@ -137,18 +137,28 @@ var histories = [{
 			},
 			{
 				type: "agent",
-				text: "We have just done a refund in your account",
+				text: "If you can send me a photo of the purchase receipt, it would help us a lot",
+				minutes: 91
+			},
+			{
+				type: "customer",
+				text: "<img style=\"width: 215px;\" src=\"ticket-lakers-store.jpg\">",
 				minutes: 1024
 			},
 			{
 				type: "agent",
+				text: "We have just done a refund in your account",
+				minutes: 1256
+			},
+			{
+				type: "agent",
 				text: "sorry for the inconvenience",
-				minutes: 1024
+				minutes: 1256
 			}
 		]
 	},
 	{
-		title: "atm & paymens",
+		title: "ATM & payments",
 		start: "10:12",
 		messages: [
 			{

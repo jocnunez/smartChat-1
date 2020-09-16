@@ -1,3 +1,7 @@
+body {
+    max-width: 960px;
+    margin: auto;
+}
 canvas {
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -27,6 +31,14 @@ canvas {
     }
 }
 
-.is-horizontal button {
+#saving {
+    float: right;
+}
+
+.control-buttons button {
     width: 150px;
+}
+
+.footer {
+    padding: 1rem 1.5rem 1rem;
 }
