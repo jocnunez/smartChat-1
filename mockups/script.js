@@ -51,8 +51,10 @@ function nextMessage(e) {
 	var message = hist.messages[currMeesage];
 	if (message) {
 		var elem = buildMessage(message.text, message.type, hist.start, message.minutes);
-	    conversation.appendChild(elem);
-	    conversation.scrollTop = conversation.scrollHeight;
+		conversation.appendChild(elem);
+		setTimeout(() => {
+			conversation.scrollTop = conversation.scrollHeight
+		}, 10);
 	}
 	
 	currMeesage ++;
