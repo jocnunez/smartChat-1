@@ -38,7 +38,6 @@ function buildMessage(text, type, start, minutes) {
 	return element;
 }
 
-
 const urlParams = new URLSearchParams(window.location.search);
 let hist = histories[urlParams.get('hist') || 0];
 document.querySelector('.name span').textContent = hist.title;
@@ -60,20 +59,39 @@ function nextMessage(e) {
 	currMeesage ++;
 }
 
+function removeAllChildNodes(parent) {
+    while (parent.firstChild) {
+        parent.removeChild(parent.firstChild);
+    }
+}
+
 if (urlParams.get('autoplay') === "true") {
 	var time = 0;
 	var min = 1000;
 	var max = 2000;
-	
-	hist.messages.forEach(message => {
-		var elem = buildMessage(message.text, message.type, hist.start, message.minutes);
-		setTimeout(()=> {
-			conversation.appendChild(elem);
+	for (let i = 0; i < histories.length; i++) {
+		hist = histories[i];
+		hist.messages.forEach(message => {
+			var elem = buildMessage(message.text, message.type, hist.start, message.minutes);
+			if (message.text.indexOf('pinpad.gif') > 0) {
+				time -= 1000;
+			}
+			setTimeout(() => {
+				conversation.appendChild(elem);
+				conversation.scrollTop = conversation.scrollHeight
+			}, time);
+			if (message.text.indexOf('pinpad.gif') > 0) {
+				time += 6000;
+			} else {
+				time += min + Math.random() * max;
+			}
+		});
+		time += max;
+		setTimeout(() => {
+			removeAllChildNodes(conversation);
 			conversation.scrollTop = conversation.scrollHeight
 		}, time);
-		time += min + Math.random() * max
-	});
+	}
 } else {
 	nextMessage();
 }
-

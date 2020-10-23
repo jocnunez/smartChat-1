@@ -58,16 +58,19 @@ window.onload = function () {
     }
 
     document.getElementById('chatButton10').addEventListener('click', function () {
+        document.getElementById('chats-secconds').value = document.getElementById('calls-secconds').value * 1;
         document.getElementById('chat-agents-percent').value = 10;
         updateSmartData();
     });
 
     document.getElementById('chatButton20').addEventListener('click', function () {
+        document.getElementById('chats-secconds').value = document.getElementById('calls-secconds').value * 1;
         document.getElementById('chat-agents-percent').value = 20;
         updateSmartData();
     });
 
     document.getElementById('chatButton30').addEventListener('click', function () {
+        document.getElementById('chats-secconds').value = document.getElementById('calls-secconds').value * 1;
         document.getElementById('chat-agents-percent').value = 30;
         updateSmartData();
     });
@@ -83,7 +86,7 @@ window.onload = function () {
     });
 
     document.getElementById('chatButton30time').addEventListener('click', function () {
-        document.getElementById('chats-secconds').value = document.getElementById('calls-secconds').value * 0.4;
+        document.getElementById('chats-secconds').value = 145;
         updateSmartData();
     });
 

@@ -61,7 +61,7 @@ var histories = [
 			},
 			{
 				type: "validate",
-				text: "<img style=\"width: 283px;\" src=\"pinpad.gif\">",
+				text: "<img style=\"width: 290px;\" src=\"pinpad.gif\">",
 				minutes: 6
 			},
 			{
@@ -147,7 +147,7 @@ var histories = [
 			},
 			{
 				type: "validate",
-				text: "<img src=\"validate.jpeg\">",
+				text: "<img style=\"width: 295px;\" src=\"pinpad.gif\">",
 				minutes: 55
 			}
 		]
